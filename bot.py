@@ -6,8 +6,9 @@ TOKEN = os.getenv("BOT_TOKEN")
 
 # Old text + buttons (with emojis, exactly as in your original code)
 keyboard = [
-    [InlineKeyboardButton("Register", url="https://your-site.com")],
-    [InlineKeyboardButton("Channel", url="https://t.me/yourchannel")]
+    [InlineKeyboardButton("Register", url="https://bydi.real-james.bond/register?ref=BPGT4Z")],
+    [InlineKeyboardButton("Group", url="https://t.me/+R2X7WYUE5lI2ZWI1")],
+    [InlineKeyboardButton("Customer Service", url="https://t.me/byd_servicio1")]
 ]
 reply_markup = InlineKeyboardMarkup(keyboard)
 
