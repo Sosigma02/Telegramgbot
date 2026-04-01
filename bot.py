@@ -13,7 +13,7 @@ reply_markup = InlineKeyboardMarkup(keyboard)
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        " Welcome to BYD!\nChoose below:",
+        " Welcome to BYD! Remember we have no bonuses. Do not do any private transaction to avoid getting scammed!\nChoose below:",
         reply_markup=reply_markup
     )
 
@@ -24,7 +24,7 @@ async def welcome_new_member(update: Update, context: ContextTypes.DEFAULT_TYPE)
         if new_member.is_bot:
             continue
         # Using the exact old welcome text
-        welcome_text = "Welcome to BYD!\nChoose below:"
+        welcome_text = "Welcome to BYD! Remember we have no bonuses. Do not do any private transaction to avoid getting scammed!\nChoose below:"
         await update.message.reply_text(
             welcome_text,
             reply_markup=reply_markup
